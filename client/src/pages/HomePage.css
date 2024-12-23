@@ -1,0 +1,118 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 300px;
+  margin-right: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.featured-destinations {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+}
+
+.featured-destinations h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.destinations {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.destination {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.destination:hover {
+  transform: translateY(-10px);
+}
+
+.why-us {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.why-us h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.benefits {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
+}
+
+.benefit h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
